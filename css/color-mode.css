@@ -1,0 +1,123 @@
+/* LIGHT MODE */
+body:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+  content: url(../assets/picture/Pic1.png);
+  
+  
+}
+  
+
+
+  :root {
+    /* Colors */
+    --bg: #f39cc0;
+    --bg-alt: #f6f1f1;
+    --bg-alt-2: #f2e9f0;
+    --bg-transparent: #F5D2D2;
+    --border: 0.1rem solid #333;
+    --text:#333 ;
+    --text-alt: #333;
+  
+    /* Face animations */
+   --tl-1: url(../assets/picture/Pic1.png);
+   --tl-2: url(../assets/picture/Pic1.png);
+   --tl-3: url(../assets/picture/Pic1.png);
+   --tl-4: url(../assets/picture/Pic1.png);
+   --tl-5: url(../assets/picture/Pic1.png);
+
+  
+ 
+   --tr-1: url(../assets/picture/Pic1.png);
+   --tr-2: url(../assets/picture/Pic1.png);
+   --tr-3: url(../assets/picture/Pic1.png);
+   --tr-4: url(../assets/picture/Pic1.png);
+   --tr-5: url(../assets/picture/Pic1.png);
+ 
+   --bl-1: url(../assets/picture/Pic1.png);
+   --bl-2: url(../assets/picture/Pic1.png);
+   --bl-3: url(../assets/picture/Pic1.png);
+   --bl-4: url(../assets/picture/Pic1.png);
+   --bl-5: url(../assets/picture/Pic1.png);
+ 
+   --br-1: url(../assets/picture/Pic1.png);
+   --br-2: url(../assets/picture/Pic1.png);
+   --br-3: url(../assets/picture/Pic1.png);
+   --br-4: url(../assets/picture/Pic1.png);
+   --br-5: url(../assets/picture/Pic1.png);
+   
+    --pink: url(../assets/icons/pink.png);
+  }
+  
+  /* DARK MODE */
+  
+  :root.dark-mode {
+    --bg: #858686;
+    --bg-alt: #D7D9D8;
+    --bg-alt-2: #cec9c9;
+    --bg-transparent: #a9a7a7f5;
+    --border: 0.1rem solid #ece8e8;
+    --text: #fff;
+
+    --tl-1: url(../assets/picture/Profi.png);
+    --tl-2: url(../assets/picture/Profi.png);
+    --tl-3: url(../assets/picture/Profi.png);
+    --tl-4: url(../assets/picture/Profi.png);
+    --tl-5: url(../assets/picture/Profi.png);
+  
+    --tr-1: url(../assets/picture/Profi.png);
+    --tr-2: url(../assets/picture/Profi.png);
+    --tr-3: url(../assets/picture/Profi.png);
+    --tr-4: url(../assets/picture/Profi.png);
+    --tr-5: url(../assets/picture/Profi.png);
+  
+    --bl-1: url(../assets/picture/Profi.png);
+    --bl-2: url(../assets/picture/Profi.png);
+    --bl-3: url(../assets/picture/Profi.png);
+   
+    --bl-4: url(../assets/picture/Profi.png);
+    --bl-5: url(../assets/picture/Profi.png);
+  
+    --br-1: url(../assets/picture/Profi.png);
+    --br-2: url(../assets/picture/Profi.png);
+    --br-3: url(../assets/picture/Profi.png);
+    --br-4: url(../assets/picture/Profi.png);
+    --br-5: url(../assets/picture/Profi.png);
+  
+   
+  
+    --normal: url(../assets/icons/normal.png);
+  }
+  
+  /* COLOR MODE TOGGLE BUTTON */
+  
+  #color-mode {
+    background: var(--bg-alt-2);
+    height: 2.75rem;
+    width: 4rem;
+    border-radius: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #toggle-button {
+    background-image: var(--pink);
+    background-size: cover;
+    cursor: pointer;
+  }
+  
+  .dark-mode #toggle-button {
+    background-image: var(--normal);
+  }
+  
+  .dark-mode #color-mode {
+    justify-content: flex-end;
+  }
